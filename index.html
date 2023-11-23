@@ -79,20 +79,30 @@ Student admission: Online registration for year 1 students, <a style="color: red
 	
 
 	<div id="topicpath"><a href="https://rupp.edu.kh/" title="" >Home</a> »  ALUMNI </div>
-	<form>
+	<form id="myForm">
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required><br><br>
+		<label for="phone">Email Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
         <label for="phone">Phone number:</label>
         <input type="tel" id="phone" name="phone" required><br><br>
         <button type="submit">Submit</button>
-        <a href="https://example.com/agenda.pdf" download>Download agenda</a>
-        
-
+        <a href="ALUMNI AGENDA.txt" download>Download agenda</a>
       </form>
+	  <div id="successMessage" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: lightgreen; padding: 20px; border-radius: 5px; text-align: center;">
+		<p>Your input is submitted successfully. Thank you!</p>
+		<button onclick="document.getElementById('successMessage').style.display='none'">x</button>
+	</div>
 		<div id="footer" class="head">
 		<p>All Rights Reserved, Copyright © 2023 Royal University of Phnom Penh (RUPP)<br />Russian Federation Boulevard, Toul Kork, Phnom Penh, Cambodia. Tel: 855-23-883-640 Fax: 855-23-880-116  <br />Designed by: <a href="https://rupp.edu.kh/center/itcenter" title="">IT Center</a></p>
 	</div><!-- /#FOOTER -->
 </div><!--/#container-->
+	<script>
+	document.getElementById('myForm').addEventListener('submit', function(event) {
+		event.preventDefault();
+		document.getElementById('successMessage').style.display = 'block';
+	});
+	</script>
 </body>
 </html>	 
 	

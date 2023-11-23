@@ -2104,7 +2104,7 @@ form {
   }
   
   input[type="email"],
-input[type="tel"] {
+input[type="tel"], input[type="password"] {
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
