@@ -2104,8 +2104,16 @@ form {
   }
   
   input[type="email"],
-input[type="tel"], input[type="password"] {
+input[type="tel"]{
   padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  
+  width: 100%;
+  max-width: 400px;
+}
+input[type="password"]{
+    padding: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
   
